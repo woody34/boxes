@@ -4,9 +4,13 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
+export const authRoutes = {
+  Home: '/'
+}
+
 const routes = [
   {
-    path: '/',
+    path: authRoutes.Home,
     name: 'home',
     component: Home
   },
