@@ -24,10 +24,13 @@ ESLint
 Editorconfig for VSCode
 `ext install EditorConfig.EditorConfig`
 
+TypeScript Extension Pack
+`ext install loiane.ts-extension-pack`
+
 ## Project setup
 
 ```sh
-npm install
+npm i
 ```
 
 ### Compiles and hot-reloads for development

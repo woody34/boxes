@@ -1,5 +1,8 @@
 {
     "editor.codeActionsOnSave": {
-      "source.fixAll": true
-    }   
+        "source.fixAll": true
+    },
+    "path-intellisense.absolutePathToWorkspace": true,
+    "path-intellisense.mappings": {
+        "@": "${workspaceRoot}/src",
 }
