@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test": "npm run test:unit && vue-cli-service test:e2e --headless",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
@@ -30,8 +31,11 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
+    "cypress": "^3.8.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "jest": "^25.1.0",
+    "jest-watch-typeahead": "^0.4.2",
     "lint-staged": "^9.5.0",
     "standard": "^14.3.1",
     "typescript": "~3.5.3",
@@ -44,6 +48,14 @@
     "*.{js,vue,ts}": [
       "vue-cli-service lint",
       "git add"
+    ]
+  },
+  "standard": {
+    "globals": [
+      "cy",
+      "describe",
+      "it",
+      "Cypress"
     ]
   }
 }
